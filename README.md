@@ -8,3 +8,4 @@ This repo contains a Flask-based implementation for face verification, using 2 o
 ## Model Evaluation on the Indian Faces Dataset
 
 The 'EdgeFace IFD Results.xlsx' file contains the face verification results for all possible face pairs in the 'Indian Faces Dataset', using EdgeFace models.
+The 'idf_eval.py' file is used to generate the results and store them in the 'EdgeFace IFD Results.xlsx' file.
