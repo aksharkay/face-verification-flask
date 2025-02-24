@@ -7,7 +7,8 @@ from backbones import get_model
 from face_alignment import align
 from torchvision import transforms
 
-dataset_path = "C:/Users/akkommajosyula/Desktop/Personal/Projects/IndianFaceDatabase"
+# Add path to the dataset folder
+dataset_path = ""
 
 # generate embeddings for a face image
 def generateEmbedding(img, model, transform):
@@ -117,7 +118,7 @@ def main(model_sheet, summary_sheet, images_path_list, model_name, transform, ve
 if __name__ == "__main__":
 
     # Initialize variables and load excel workbook
-    workbook_path = "./IFD Results 1.xlsx"
+    workbook_path = "./EdgeFace IFD Results.xlsx"
     workbook_obj = openpyxl.load_workbook(workbook_path)
     model_sheet = workbook_obj["EdgeFace"]
     summary_sheet = workbook_obj["Summary"]
