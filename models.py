@@ -15,19 +15,20 @@ verification_thresholds = {
         "euclidean_l2": 1.13
     },
     "edgeface_base": {
-        "euclidean_l2": None
+        "euclidean_l2": 1.0
     },
     "edgeface_s_gamma_05": {
-        "euclidean_l2": None
+        "euclidean_l2": 1.0
     },
     "edgeface_xs_q": {
-        "euclidean_l2": None
+        "euclidean_l2": 1.0
     }
 }
 
 deepface_verification_models = [
     {
         "model": "Facenet",
+        "model_column": "facenet",
         "normalization": "Facenet2018",
         "detector": "opencv",
         "distance_metric": "euclidean_l2",
@@ -35,6 +36,7 @@ deepface_verification_models = [
     },
     {
         "model": "Facenet512",
+        "model_column": "facenet512",
         "normalization": "Facenet2018",
         "detector": "opencv",
         "distance_metric": "euclidean_l2",
@@ -42,6 +44,7 @@ deepface_verification_models = [
     },
     {
         "model": "ArcFace",
+        "model_column": "arcface",
         "normalization": "ArcFace",
         "detector": "opencv",
         "distance_metric": "euclidean_l2",
@@ -52,14 +55,17 @@ deepface_verification_models = [
 edgeface_verification_models = [
     {
         "model": "edgeface_base",
+        "model_column": "edgeface_base",
         "threshold": verification_thresholds["edgeface_base"]["euclidean_l2"]
     },
     {
         "model": "edgeface_s_gamma_05",
+        "model_column": "edgeface_s_gamma_05",
         "threshold": verification_thresholds["edgeface_s_gamma_05"]["euclidean_l2"]
     },
     {
         "model": "edgeface_xs_q",
+        "model_column": "edgeface_xs_q",
         "threshold": verification_thresholds["edgeface_xs_q"]["euclidean_l2"]
     }
 ]
