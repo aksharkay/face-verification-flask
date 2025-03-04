@@ -1,2 +1,5 @@
 .env
-IFD Results.xlsx
+**/__pycache__/
+face_alignment/__pycache__/
+backbones/__pycache__/
+face_alignment/mtcnn_pytorch/src/__pycache__/
