@@ -148,4 +148,4 @@ if __name__ == "__main__":
         model_base_col += 3
         summary_row += 1
 
-    workbook_obj.save("./IFD Results 1.xlsx")
+    workbook_obj.save("./EdgeFace IFD Results.xlsx")
